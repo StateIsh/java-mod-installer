@@ -91,10 +91,8 @@ public class Main {
             JCheckBox replayVoiceChat = new JCheckBox("Replay Voice Chat");
             JCheckBox bobby = new JCheckBox("Bobby");
             
-            // Initially disable replayVoiceChat since replayMod starts unchecked
             replayVoiceChat.setEnabled(false);
             
-            // Add listener to replayMod to control replayVoiceChat
             replayMod.addActionListener(e -> {
                 if (replayMod.isSelected()) {
                     replayVoiceChat.setEnabled(true);
